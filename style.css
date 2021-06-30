@@ -80,8 +80,8 @@
 .content-message{
     background-image: url(./img/mine.jpg);
     padding: 0;
-    background-size: contain;
     height: 500px;
+    overflow-y: scroll;
 }
 .input-chat{
     height: 50px;
@@ -99,7 +99,7 @@
 .chat-green, .chat-white{
     padding: 6px;
     border-radius: 5px;
-    flex-basis: 20%;
+    min-width: 20%;
     max-width: 50%;
 }
 .chat-green{
