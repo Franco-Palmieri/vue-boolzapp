@@ -1,0 +1,26 @@
+.contenitore-chat{
+    margin-top: 50px;
+}
+.aside{
+    border: 1px solid black;
+    height: 500px;
+
+}
+.container-message{
+    border: 1px solid black;
+    height: 500px;
+}
+.user-box{
+    padding: 16px 16px 16px 0;
+    align-items: center;
+    background-color: rgb(241, 241, 241);
+}
+.icon-top{
+    color: rgb(177, 177, 177);
+    font-size: 20px;
+    margin: 5px;
+}
+img{
+    width: 30%;
+    border-radius: 100%;
+}
