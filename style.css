@@ -3,12 +3,9 @@
 }
 .aside{
     border: 1px solid black;
-    height: 500px;
-
 }
 .container-message{
     border: 1px solid black;
-    height: 500px;
 }
 .user-box{
     padding: 16px 16px 16px 0;
@@ -50,4 +47,23 @@
 .input-search{
     width: calc(100% - 32px);
     border: none;
+}
+.box-chats{
+    align-items: flex-start;
+    padding-right: 5px;
+    background-color: rgb(241, 241, 241); ;
+}
+.box-chats .li-chats{
+    border-bottom: 1px solid lightgray;
+    padding: 16px;
+    border-right: 1px solid lightgray;
+    background-color: white;
+
+}
+.box-chats .li-chats img{
+    width: 15%;
+    border-radius: 100%;
+}
+.box-chats .li-chats:hover{
+    background-color: rgb(236, 236, 236);
 }
