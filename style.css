@@ -15,7 +15,7 @@
 .icon-top{
     color: rgb(177, 177, 177);
     font-size: 25px;
-    margin: 5px;
+    margin: 10px;
 }
 .icon-notifica{
     color: lightskyblue;
@@ -51,7 +51,7 @@
 .box-chats{
     align-items: flex-start;
     padding-right: 5px;
-    background-color: rgb(241, 241, 241); ;
+    background-color: rgb(241, 241, 241); 
 }
 .box-chats .li-chats{
     border-bottom: 1px solid lightgray;
@@ -71,7 +71,6 @@
 /* CONTAINER MESSAGE  */
 .container-message{
     overflow: hidden;
-    padding-bottom: 100px;
 }
 .user-box-right{
     align-items: center;
@@ -83,6 +82,8 @@
     background-image: url(./img/mine.jpg);
     padding: 0;
     background-size: contain;
+    overflow: hidden;
+    height: 100vh;
 }
 .input-chat{
     height: 50px;
@@ -90,4 +91,7 @@
     width: 100%;
     border: none;
     padding: 16px;
+}
+.icon-chat{
+    font-size: 25px;
 }
