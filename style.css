@@ -101,15 +101,16 @@
     padding: 6px;
     border-radius: 5px;
 }
+.clearfix {
+    content: "";
+    clear: both;
+    display: table;
+  }
 .chat-green{
     background-color: yellowgreen;
-    display: flex;
-    justify-content: flex-end;
-   
+    float: right;
 }
 .chat-white{    
     background-color: white;
-    display: flex;
-    justify-content: flex-start;
-        
+    float: left;
 }
