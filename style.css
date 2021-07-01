@@ -81,6 +81,7 @@
     background-image: url(./img/mine.jpg);
     padding: 0;
     height: 500px;
+    overflow-x: hidden;
     overflow-y: scroll;
 }
 .input-chat{
@@ -99,13 +100,16 @@
 .chat-green, .chat-white{
     padding: 6px;
     border-radius: 5px;
-    min-width: 20%;
-    max-width: 50%;
 }
 .chat-green{
     background-color: yellowgreen;
+    display: flex;
+    justify-content: flex-end;
+   
 }
 .chat-white{    
     background-color: white;
+    display: flex;
+    justify-content: flex-start;
         
 }

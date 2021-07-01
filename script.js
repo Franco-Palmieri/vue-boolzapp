@@ -90,6 +90,13 @@ const app = new Vue(
             
         },
         methods:{
+            getMessageClass: function (status){
+                if (status === "sent"){
+                    return "chat-green"
+                }else{
+                    return "chat-white"
+                }
+            },
             addNewList: function() {
                 this.todoList.push(this.newTodoList);
                 this.newTodoList = "";

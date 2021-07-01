@@ -51,7 +51,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 ">
+                            <div class="col-12 container-chats">
                                 <div v-for="(user, index) in contacts" class="row box-chats">
                                     <div class="col-12 li-chats d-flex">
                                         <img :src="user.avatar" alt="">
@@ -80,16 +80,10 @@
                                 </div>
                             </div>
                             <div class="col-12 content-message">
-                                <div class="row msg-chat">
-                                    <div class="col-12 d-flex justify-content-start">
-                                        <div class="chat-white">
-                                            <div class="text-message">ciao</div>
-                                            <div class="date-message d-flex justify-content-end">10/02</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 d-flex justify-content-end">
-                                        <div class="chat-green">
-                                            <div class="text-message">ciao come stai? io oggi sono andato al mare</div>
+                                <div class="row msg-chat" v-for="msg in contacts[0].messages">
+                                    <div class="col-12 d-flex" :class="getMessageClass(msg.status)" >
+                                        <div class="">
+                                            <div class="text-message">{{ msg.text}}</div>
                                             <div class="date-message d-flex justify-content-end">10/02</div>
                                         </div>
                                     </div>
