@@ -101,6 +101,11 @@ const app = new Vue(
                     return "chat-white"
                 }
             },
+            //Funzione per selezionare utente
+            //attraverso l'index
+            selectUser: function (index){
+                this.contactIndex = index;
+            },
             //Funzione per inviare messaggi
             newText: function(){
                 this.contacts[this.contactIndex].messages.push({

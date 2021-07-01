@@ -53,7 +53,7 @@
                             </div>
                             <div class="col-12 container-chats">
                                 <div v-for="(user, index) in contacts" class="row box-chats">
-                                    <div class="col-12 li-chats d-flex">
+                                    <div class="col-12 li-chats d-flex" @click="selectUser(index)">
                                         <img :src="user.avatar" alt="">
                                         <span>{{user.name}}</span>
                                     </div>
