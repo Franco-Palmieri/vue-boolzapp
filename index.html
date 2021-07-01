@@ -97,7 +97,7 @@
                                                 <i class="far fa-smile icon-chat"></i>
                                             </div>
                                             <div class="col-10">
-                                                <input class="input-chat" v-model="newMessage" @click="newText()" type="text" placeholder="Scrivi un messaggio">
+                                                <input class="input-chat" v-model="newMessage" @keyup.enter="newText" type="text" placeholder="Scrivi un messaggio">
                                             </div>
                                             <div class="col-1 d-flex justify-content-center p-0">
                                                 <i class="fas fa-microphone icon-chat"></i>
