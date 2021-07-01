@@ -86,10 +86,14 @@ const app = new Vue(
                         }
                     ],
                 },
-            ]
-            
+            ],
+            contactIndex: 0,
+            newMessage: "",
+
         },
         methods:{
+            //Funzione per cambiare classe
+            //dipendendo dal suo status
             getMessageClass: function (status){
                 if (status === "sent"){
                     return "chat-green"
@@ -97,6 +101,16 @@ const app = new Vue(
                     return "chat-white"
                 }
             },
+            //Funzione per inviare messaggi
+            newText: function(){
+                this.contacts[this.contactIndex].messages.push({
+                    date: "01/07/2021 15:00",
+                    text: this.newMessage,
+                    status: "sent",
+                });
+                this.newMessage= "";
+            },
+
             addNewList: function() {
                 this.todoList.push(this.newTodoList);
                 this.newTodoList = "";
