@@ -81,13 +81,11 @@
                             </div>
                             <div class="col-12 content-message">
                                 <div class="row msg-chat" v-for="msg in contacts[0].messages" >
-                                    <div class="col-12 d-flex"  >
-                                        <div class="row clearfix">
-                                            <div class="":class="getMessageClass(msg.status)">
-                                                <div class="text-message">{{ msg.text}}</div>
-                                                <div class="date-message d-flex justify-content-end">10/02</div>
-                                             </div>
-                                        </div>
+                                    <div class="col-12 clearfix"  >
+                                        <div class="":class="getMessageClass(msg.status)">
+                                            <div class="text-message">{{ msg.text}}</div>
+                                            <div class="date-message d-flex justify-content-end">10/02</div>
+                                         </div>
                                     </div>
                                 </div>
                             </div>
