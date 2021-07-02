@@ -121,7 +121,7 @@ const app = new Vue(
                     text: this.newMessage,
                     status: "sent",
                 });
-                setTimeout (function () { this.rispostaUser() }, 1000)
+                setTimeout (function () { this.answerUser() }, 1000)
                 this.newMessage= "";
             },
 
