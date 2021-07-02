@@ -92,7 +92,7 @@ const app = new Vue(
 
         },
         methods:{
-            //Funzione per cambiare classe
+            //Funzione per cambiare class
             //dipendendo dal suo status
             getMessageClass: function (status){
                 if (status === "sent"){
@@ -106,6 +106,14 @@ const app = new Vue(
             selectUser: function (index){
                 this.contactIndex = index;
             },
+            //Funzione per ricevere messaggio
+            answerUser: function (){
+                this.contacts[this.contactIndex].messages.push({
+                    date: "01/07/2021 15:00",
+                    text: "ok",
+                    status: "received",
+                });
+            },
             //Funzione per inviare messaggi
             newText: function(){
                 this.contacts[this.contactIndex].messages.push({
@@ -113,6 +121,7 @@ const app = new Vue(
                     text: this.newMessage,
                     status: "sent",
                 });
+                setTimeout (function () { this.rispostaUser() }, 1000)
                 this.newMessage= "";
             },
 
