@@ -116,15 +116,15 @@ const app = new Vue(
             },
             //Funzione per inviare messaggi
             newText: function(){
+                const self = this;
                 this.contacts[this.contactIndex].messages.push({
                     date: "01/07/2021 15:00",
                     text: this.newMessage,
                     status: "sent",
                 });
-                setTimeout (function () { this.answerUser() }, 1000)
+                setTimeout (function () { self.answerUser() }, 1000),
                 this.newMessage= "";
             },
-
             addNewList: function() {
                 this.todoList.push(this.newTodoList);
                 this.newTodoList = "";
