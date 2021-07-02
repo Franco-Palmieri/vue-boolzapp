@@ -47,7 +47,7 @@
                                 <div class="row box-input justify-content-around">
                                     <div class="col-12 bg-white">
                                         <i class="fas fa-search"></i>
-                                        <input class="input-search" type="text" placeholder="Cerca o inizia una nuova chat">
+                                        <input class="input-search" @keyup.enter="searchUser()" type="text" placeholder="Cerca o inizia una nuova chat">
                                     </div>
                                 </div>
                             </div>

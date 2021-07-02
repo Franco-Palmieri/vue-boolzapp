@@ -92,6 +92,15 @@ const app = new Vue(
 
         },
         methods:{
+            //Funzione per cercare nell'input
+            //il nome dell'utente
+            searchUser: function(){
+                if(this.contacts.name.includes(this.contacts.name)){
+                    return this.contacts.name;
+                }else{
+                    return false;
+                }
+            },
             //Funzione per cambiare class
             //dipendendo dal suo status
             getMessageClass: function (status){
