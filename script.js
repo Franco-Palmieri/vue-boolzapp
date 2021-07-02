@@ -89,13 +89,13 @@ const app = new Vue(
             ],
             contactIndex: 0,
             newMessage: "",
-
+            contactSearch: "",
         },
         methods:{
             //Funzione per cercare nell'input
             //il nome dell'utente
             searchUser: function(){
-                if(this.contacts.name.includes(this.contacts.name)){
+                if(this.contacts.name.includes(contactSearch)){
                     return this.contacts.name;
                 }else{
                     return false;
